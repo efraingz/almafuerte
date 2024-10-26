@@ -7,9 +7,9 @@
 */
 
 $imSettings['general'] = array(
-	'site_id' => '5FCCF7CC53DC3F2898009683BCEE5BCA',
-	'url' => 'http://almafuerte.infinityfreeapp.com/',
-	'homepage_url' => 'http://almafuerte.infinityfreeapp.com/index.html',
+	'site_id' => '0344FBD77BFB2350AE9B2653A28F7895',
+	'url' => 'http://www.almafuerte.free.nf/',
+	'homepage_url' => 'http://www.almafuerte.free.nf/index.html',
 	'icon' => '',
 	'version' => '2022.2.11.0',
 	'sitename' => 'Comisaria Almafuerte',
@@ -36,8 +36,8 @@ $imSettings['password_policy'] = array(
 |	Captcha
 |-------------------------------
 */ImTopic::$captcha_code = "		<div class=\"x5captcha-wrap\">
-			<label for=\"ba9k72ua-imCpt\">Palabra de control:</label><br />
-			<input type=\"text\" id=\"ba9k72ua-imCpt\" class=\"imCpt\" name=\"imCpt\" maxlength=\"5\" />
+			<label for=\"c58l418o-imCpt\">Palabra de control:</label><br />
+			<input type=\"text\" id=\"c58l418o-imCpt\" class=\"imCpt\" name=\"imCpt\" maxlength=\"5\" />
 		</div>
 ";
 
@@ -59,7 +59,7 @@ $imSettings['admin'] = array(
 $imSettings['databases'] = array();
 $ecommerce = Configuration::getCart();
 $ecommerce->setSettings(array(
-	'page_url' => 'http://almafuerte.infinityfreeapp.com/',
+	'page_url' => 'http://www.almafuerte.free.nf/',
 	'force_sender' => false,
 	'mail_btn_css' => 'display: inline-block; text-decoration: none; color: rgba(10, 12, 18, 1); background-color: rgba(111, 168, 220, 1); padding: 10px 10px 10px 10px; border-style: solid; border-width: 1px 1px 1px 1px; border-color: transparent transparent transparent transparent; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;',
 	'email_opening' => 'Estimado cliente,<br /><br />Gracias por su pedido Se le recordamos de que el pago no ha todavía sido recibido.<br /><br />A continuación encontrará una lista de los productos pedidos, la información de facturación y de envío y las instrucciones para efectuar el pago.',

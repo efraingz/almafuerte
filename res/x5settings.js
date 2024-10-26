@@ -4,7 +4,7 @@
 		p = s.currentPath,
 		b = x.boot;
 
-	s.siteId = '5FCCF7CC53DC3F2898009683BCEE5BCA';
+	s.siteId = '0344FBD77BFB2350AE9B2653A28F7895';
 	s.version = '2022-2-11-0';
 	b.push(function () {
 		x.setupDateTime();

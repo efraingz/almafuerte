@@ -10,7 +10,8 @@ $imSettings['search']['general'] = array(
 		'5' => 'objetivos-y-coordenadas.html',
 		'6' => 'control-de-chacaritas.html',
 		'7' => 'pruebas.html',
-		'8' => 'calculadora-adicionales.html'
+		'8' => 'calculadora-adicionales.html',
+		'9' => 'actas.html'
 	),
 	'extendedScope' => array(
 	)
