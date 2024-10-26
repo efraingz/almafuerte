@@ -1,26 +1,26 @@
+<?php require_once("res/x5engine.php"); ?>
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="es-ES" dir="ltr">
 	<head>
-		<title>Comisaria Almafuerte</title>
+		<title>Buscar - Comisaria Almafuerte</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Stenicus" />
 		<meta name="generator" content="Incomedia WebSite X5 Evo 2022.2.11 - www.websitex5.com" />
-		<meta name="description" content="Queti" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link rel="stylesheet" href="style/reset.css?2022-2-11-0" media="screen,print" />
 		<link rel="stylesheet" href="style/print.css?2022-2-11-0" media="print" />
 		<link rel="stylesheet" href="style/style.css?2022-2-11-0" media="screen,print" />
 		<link rel="stylesheet" href="style/template.css?2022-2-11-0" media="screen" />
-		<link rel="stylesheet" href="pcss/index.css?2022-2-11-0-638655536141332665" media="screen,print" />
+		<link rel="stylesheet" href="pcss/imsearch.css?2022-2-11-0-638655536141302759" media="screen,print" />
 		<script src="res/jquery.js?2022-2-11-0"></script>
 		<script src="res/x5engine.js?2022-2-11-0" data-files-version="2022-2-11-0"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('El Explorador que estás usando no es compatible con las funciones requeridas para mostrar este Sitio web.','El Navegador que estás utilizando podría no ser compatible con las funciones requeridas para poder ver este Sitio web.','[1]Actualiza tu explorador [/1] o [2]continuar de todos modos[/2].','http://outdatedbrowser.com/'); };
-			x5engine.utils.currentPagePath = 'index.html';
+			x5engine.utils.currentPagePath = 'imsearch.php';
 		</script>
-		<link rel="icon" href="favicon.png?2022-2-11-0-638655536141282796" type="image/png" />
+		<link rel="icon" href="favicon.png?2022-2-11-0-638655536141262860" type="image/png" />
 	</head>
 	<body>
 		<div id="imPageExtContainer">
@@ -29,7 +29,7 @@
 				<div id="imFooterBg"></div>
 				<div id="imPage">
 					<header id="imHeader">
-						<h1 class="imHidden">Comisaria Almafuerte</h1>
+						<h1 class="imHidden">Buscar - Comisaria Almafuerte</h1>
 						<div id="imHeaderObjects"><div id="imHeader_imObjectTitle_05_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectTitle_05"><span id ="imHeader_imObjectTitle_05_text" >Comisaria ALMAFUERTE</span></div></div><div id="imHeader_imMenuObject_07_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imHeader_imMenuObject_07"><div id="imHeader_imMenuObject_07_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
@@ -121,18 +121,18 @@ $(function () {$('#imStickyBar_imMenuObject_01_container > ul > li').not('.imMnM
 					<div id="imContentGraphics"></div>
 					<main id="imContent">
 						<a id="imGoToCont"></a>
-						<div id="imPageRow_1" class="imPageRow">
+						<div id="imSearchPage">
+						<h2 id="imPgTitle">Resultados de búsqueda</h2>
+						<?php
+						$search = new imSearch();
+						$keys = isset($_GET['search']) ? @htmlspecialchars($_GET['search']) : "";
+						$page = isset($_GET['page']) ? @htmlspecialchars($_GET['page']) : 0;
+						$type = isset($_GET['type']) ? @htmlspecialchars($_GET['type']) : "pages"; ?>
+						<div class="searchPageContainer">
+						<?php echo $search->search($keys, $page, $type); ?>
+						</div>
+						</div>
 						
-						</div>
-						<div id="imCell_13" class=""  data-responsive-sequence-number="1"> <div id="imCellStyleGraphics_13"></div><div id="imCellStyleBorders_13"></div><div id="imTextObject_13">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_13_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									<div class="imHeading1 imTACenter"><span class="cf1">Seleccione el contenido</span></div><div><div class="imTACenter"><br></div></div>
-								</div>
-							</div>
-						
-						</div>
-						</div>
 					</main>
 					<footer id="imFooter">
 						<div id="imFooterObjects"></div>
